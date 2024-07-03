@@ -1,8 +1,11 @@
-﻿internal class Program {
-    private static void Main(string[] args) {
+﻿using TicTacToe.game;
 
-        Console.WriteLine("Hello, World!");
+namespace Program {
+    internal class Program {
+        private static void Main(string[] args) {
+            GameManager gameManager = new GameManager(3);
 
+            gameManager.StartGame();
+        }
     }
-    
 }
